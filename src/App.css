@@ -1,0 +1,58 @@
+.bg-image {
+    /* Specify your background image and other styles here */
+    background-image: url('./assets/images/bg.jpg');
+    background-size: cover; /* or 'contain' based on your preference */
+    /* Add any other styles as needed */
+  }
+
+
+
+
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .grayscale-hover:hover {
+    filter: grayscale(0%);
+  }
+
+  .silder-ul {
+    color: #fff;
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50%;
+    width: 80%;
+  }
+  li {
+    cursor: pointer;
+  }
+  .hover-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 50px;
+  }
+  .hover-container:hover > img {
+    opacity: 1;
+    transform: translate(-50%, -20%);
+  }
+  .image-hover {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: -1;
+    opacity: 0;
+    transition: transform 1.5s linear;
+    z-index:10 ;
+  }
+  
