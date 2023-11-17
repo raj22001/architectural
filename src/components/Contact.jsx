@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
         </div>
         <div className="-ml-[15%] rounded-3xl">
-            <img src={circular}  alt=""  className="w-[250px] object-cover h-[280px] rounded-3xl hover:animate-pulse"/>
+            <img src={circular}  alt=""  className="w-[250px] object-cover h-[280px] rounded-3xl hover:animate-pulse"/> 
         </div>
       </div>
 

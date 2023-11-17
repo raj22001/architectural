@@ -2,18 +2,47 @@ import mangment from "../assets/servicesImage/mangment.jpg"
 import office from "../assets/servicesImage/office.jpg"
 import circular from "../assets/servicesImage/circular.jpg"
 import { FaCirclePlay } from "react-icons/fa6";
+import { useState } from "react";
+import { useSpring, animated } from 'react-spring';
 
 const Services = () => {
     
+    const [animate, setAnimate] = useState(false);
+
+    const firstImageProps = useSpring({
+      opacity: animate ? 1 : 0,
+      transform: animate ? 'translateY(0)' : 'translateY(-100%)',
+    });
+  
+    const secondImageProps = useSpring({
+      opacity: animate ? 1 : 0,
+      transform: animate ? 'translateY(0)' : 'translateY(-100%)',
+    });
+  
+    const handleAnimationStart = () => {
+      setAnimate(true);
+    };
+
   return (
     <div className="mt-[320px] w-[100%] h-[750px] relative flex justify-center">
         <div className=" w-[95%] h-full ">
             <div className="w-[100%] h-full flex flex-row">
-                <div className="w-[40%] ">
-                    <p className="">We Provide comprehensive management services through the development design and contruction phases of general building projects</p>
-                    <div className="w-[35] h-[70] mt-10">
-                        <img src={mangment} className="w-full h-[350px] object-cover m-2 rounded-3xl"/>
-                        <img src={office} className="w-full h-[250px] object-cover m-2 rounded-3xl"/>
+            <div className={`w-[40%] ${animate ? 'first-image' : ''}`}>
+            <p>We Provide comprehensive management services through the development design and construction phases of general building projects</p>
+                <div className="w-[35] h-[70] mt-10">
+                <animated.img
+                style={firstImageProps}
+                onLoad={handleAnimationStart}
+                src={mangment}
+                className="w-full h-[350px] object-cover m-2 rounded-3xl"
+                alt="Management"
+              />
+                <animated.img
+                style={secondImageProps}
+                src={office}
+                className="w-full h-[250px] object-cover m-2 rounded-3xl"
+                alt="Office"
+              />
                     </div>
                 </div>
                 <div className="flex flex-col w-[60%] ">
