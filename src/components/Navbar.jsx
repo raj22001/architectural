@@ -1,30 +1,7 @@
-
 import {Link} from "react-scroll"
+import { links } from "../data/data"
 
 const Navbar = () => {
-
-    const links = [
-        {
-            id:1,
-            link:'About',
-            linkto:"Body"
-        },
-        {
-            id:2,
-            link:'Services',
-            linkto:"Services"
-        },
-        {
-            id:3,
-            link:'Portfolio',
-            linkto:"Portfolio"
-        },
-        {
-            id:4,
-            link:'Contact',
-            linkto:"Contact"
-        },
-    ]
 
   return (
     <div className="flex justify-between items-center ">

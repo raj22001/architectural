@@ -11,12 +11,12 @@ const Services = () => {
 
     const firstImageProps = useSpring({
       opacity: animate ? 1 : 0,
-      transform: animate ? 'translateY(0)' : 'translateY(-100%)',
+      transform: animate ? 'translateY(0)' : 'translateY(100%)',
     });
   
     const secondImageProps = useSpring({
       opacity: animate ? 1 : 0,
-      transform: animate ? 'translateY(0)' : 'translateY(-100%)',
+      transform: animate ? 'translateY(0)' : 'translateY(80%)',
     });
   
     const handleAnimationStart = () => {
@@ -24,27 +24,36 @@ const Services = () => {
     };
 
   return (
+
     <div className="mt-[320px] w-[100%] h-[750px] relative flex justify-center">
+      {/* Full width of the component */}
+
+
         <div className=" w-[95%] h-full ">
             <div className="w-[100%] h-full flex flex-row">
-            <div className={`w-[40%] ${animate ? 'first-image' : ''}`}>
-            <p>We Provide comprehensive management services through the development design and construction phases of general building projects</p>
+
+            {/* Left Side Styling and Animation */}
+            <div className={`w-[40%] ${animate ? 'first-image' : 'second-image'}`}>
+              <p>We Provide comprehensive management services through the development design and construction phases of general building projects</p>
                 <div className="w-[35] h-[70] mt-10">
-                <animated.img
-                style={firstImageProps}
-                onLoad={handleAnimationStart}
-                src={mangment}
-                className="w-full h-[350px] object-cover m-2 rounded-3xl"
-                alt="Management"
-              />
-                <animated.img
-                style={secondImageProps}
-                src={office}
-                className="w-full h-[250px] object-cover m-2 rounded-3xl"
-                alt="Office"
-              />
-                    </div>
+                  <animated.img
+                  style={firstImageProps}
+                  onLoad={handleAnimationStart}
+                  src={mangment}
+                  className="w-full h-[350px] object-cover m-2 rounded-3xl"
+                  alt="Management"
+                />
+                  <animated.img
+                  style={secondImageProps}
+                  src={office}
+                  className="w-full h-[250px] object-cover m-2 rounded-3xl"
+                  alt="Office"
+                />
                 </div>
+            </div>
+
+
+              {/* Right Side Styling and Animation */}
                 <div className="flex flex-col w-[60%] ">
                     <div className="flex justify-end mr-10 gap-x-3  ">
                         <div className="w-[32%] h-[300px] rounded-2xl ">

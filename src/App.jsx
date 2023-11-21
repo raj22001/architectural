@@ -1,11 +1,10 @@
 import './App.css'
-import Body from './components/Body'
 import Navbar from './components/Navbar'
-
-import Portfolio from './components/Portfolio'
-import Services from './components/Services'
-import Slider from './components/Slider'
-import Contact from './components/Contact'
+import Body from './pages/Body'
+import Portfolio from './pages/Portfolio'
+import Services from './pages/Services'
+import Slider from './pages/Slider'
+import Contact from './pages/Contact'
 
 
 function App() {

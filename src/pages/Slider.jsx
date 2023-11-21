@@ -12,6 +12,7 @@ const Slider = () => {
     
   return (
     <div className="text-black bg-black w-[100%] h-[950px] rounded-t-3xl ">
+      {/*width of images*/}
             <div className="">
                 <h1 className="text-white text-4xl flex justify-center mt-[]"></h1>
             </div>
@@ -19,6 +20,9 @@ const Slider = () => {
         <div className="text-start -mt-16 mb-[10%] mr-[5%] flex  justify-center ">
             <h1 className="text-white text-4xl  -pb-[100px]"> WHAT WE DO</h1>
         </div>
+
+        {/* Here we display each image by 1 by 1 if u want use map function the code
+         is added in extra folder this just for example */}
       <div className="hover-container ">
         <li>Urban design</li>
         <li>/</li>
@@ -61,7 +65,7 @@ const Slider = () => {
       </div>
     </ul>
       <div className="flex flex-row justify-end mr-[20%] mt-[3.5%] cursor-pointer">
-          <h1 className="text-red-400 flex gap-2 items-center">BOOK A DISCOVERY CALL <span><ImArrowUpRight2  size={20} color="red"/></span></h1>
+          <h1 className="text-red-400 flex gap-2 items-center lg:mt-[10px] hover:bg-gray-300 hover:p-2 rounded-3xl hover:text-black">BOOK A DISCOVERY CALL <span><ImArrowUpRight2  size={20} color="red"/></span></h1>
       </div>
     </div>
   )
