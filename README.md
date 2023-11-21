@@ -10,3 +10,5 @@ how to run on local machine
 
 
 Documentation :- https://drive.google.com/file/d/1FveL1XYI1MzXqyy5wNc8t7slGW9ZNFNI/view?usp=drive_link
+
+Live Link :-  https://architectural-site-1.netlify.app/
