@@ -9,6 +9,6 @@ how to run on local machine
 4. npm run dev to start code .   
 
 
-Documentation :- https://drive.google.com/file/d/1FveL1XYI1MzXqyy5wNc8t7slGW9ZNFNI/view?usp=drive_link
+Documentation :- https://drive.google.com/file/d/1ofcNEmtXhgxTP7_jGg_B1z4uZVZ0TiJc/view?usp=drive_link
 
 Live Link :-  https://architectural-site-1.netlify.app/
