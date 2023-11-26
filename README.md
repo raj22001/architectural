@@ -12,3 +12,18 @@ how to run on local machine
 Documentation :- https://drive.google.com/file/d/1ofcNEmtXhgxTP7_jGg_B1z4uZVZ0TiJc/view?usp=drive_link
 
 Live Link :-  https://architectural-site-2.netlify.app/
+
+
+//First Bot
+Live Link Bot No.1 :- https://normal-bot.netlify.app/
+Bot No1 :-  https://github.com/raj22001/Chat_Bot_Normal1
+
+
+//Second Bot
+Live Link Bot No2 :- https://chat-bot-2ai.netlify.app/
+Code Link:- https://github.com/raj22001/Chat_Bot_AI
+
+
+// 3rd Bot
+Bot no. (Video Link) 3 :- https://youtu.be/lv-S4AOiyT8
+Code Link:- https://github.com/raj22001/Chat_Bot_AI_backend
